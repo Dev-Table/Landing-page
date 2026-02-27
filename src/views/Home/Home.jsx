@@ -13,6 +13,12 @@ const Home = () => {
   return (
     <>
       <section className="hero">
+        <div className="tech-grid-bg">
+          <div className="grid-item"></div>
+          <div className="grid-item"></div>
+          <div className="grid-item"></div>
+          <div className="grid-item"></div>
+        </div>
         <div className="hero-content">
           <h1 className="hero-title">
             The Future of <span className="highlight">Technology</span> Starts Here
@@ -23,14 +29,6 @@ const Home = () => {
           <div className="hero-buttons">
             <PrimaryButton>Start Your Journey</PrimaryButton>
             <SecondaryButton>Learn More</SecondaryButton>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <div className="tech-grid">
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
           </div>
         </div>
       </section>
