@@ -1,5 +1,6 @@
 import './Contact.css'
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton'
+import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 
 const Contact = () => {
   return (
@@ -10,19 +11,44 @@ const Contact = () => {
           Ready to start your next project? We're here to help bring your ideas to life.
         </p>
 
+        {/* <div className="contact-media"> */}
+        {/*   <div className="media-wrapper"> */}
+        {/*     <img  */}
+        {/*       src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lxFvC0wuaRflw/giphy.gif"  */}
+        {/*       alt="Contact us illustration"  */}
+        {/*       className="contact-gif" */}
+        {/*     /> */}
+        {/*   </div> */}
+        {/* </div> */}
+
         <div className="contact-content">
           <div className="contact-info">
             <div className="contact-item">
-              <h3>Email</h3>
-              <p>devtable276@gmail.com</p>
+              <div className="contact-icon">
+                <FiMail />
+              </div>
+              <div className="contact-details">
+                <h3>Email</h3>
+                <p>devtable276@gmail.com</p>
+              </div>
             </div>
             <div className="contact-item">
-              <h3>Phone</h3>
-              <p>+52 1 33 3393 1845</p>
+              <div className="contact-icon">
+                <FiPhone />
+              </div>
+              <div className="contact-details">
+                <h3>Phone</h3>
+                <p>+52 1 33 3393 1845</p>
+              </div>
             </div>
             <div className="contact-item">
-              <h3>Location</h3>
-              <p>Available remotely worldwide</p>
+              <div className="contact-icon">
+                <FiMapPin />
+              </div>
+              <div className="contact-details">
+                <h3>Location</h3>
+                <p>Available remotely worldwide</p>
+              </div>
             </div>
           </div>
 

@@ -1,9 +1,12 @@
 import './Home.css'
+import { useNavigate } from 'react-router-dom'
 import CTAButton from '../../components/CTAButton/CTAButton'
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton'
 import SecondaryButton from '../../components/SecondaryButton/SecondaryButton'
 
 const Home = () => {
+  const navigate = useNavigate()
+  
   const features = [
     { title: "AI Integration", description: "Harness the power of artificial intelligence to automate and optimize your workflows", icon: "Icon1" },
     { title: "Cloud Solutions", description: "Scalable cloud infrastructure that grows with your business needs", icon: "Icon2" },
@@ -27,8 +30,8 @@ const Home = () => {
             We build cutting-edge digital solutions that transform your business into a technological powerhouse
           </p>
           <div className="hero-buttons">
-            <PrimaryButton>Start Your Journey</PrimaryButton>
-            <SecondaryButton>Learn More</SecondaryButton>
+            <PrimaryButton onClick={() => navigate('/services')}>Start Your Journey</PrimaryButton>
+            <SecondaryButton onClick={() => navigate('/about')}>Learn More</SecondaryButton>
           </div>
         </div>
       </section>

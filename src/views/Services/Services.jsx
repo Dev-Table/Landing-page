@@ -1,8 +1,11 @@
 import './Services.css'
+import { useNavigate } from 'react-router-dom'
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton'
 import SecondaryButton from '../../components/SecondaryButton/SecondaryButton'
 
 const Services = () => {
+  const navigate = useNavigate()
+  
   const services = [
     {
       title: "Landing Pages Development",
@@ -52,8 +55,8 @@ const Services = () => {
                 ))}
               </ul>
               <div className="service-actions">
-                <PrimaryButton>Get Started</PrimaryButton>
-                <SecondaryButton>Learn More</SecondaryButton>
+                <PrimaryButton onClick={() => navigate('/contact')}>Get Started</PrimaryButton>
+                <SecondaryButton onClick={() => navigate('/about')}>Learn More</SecondaryButton>
               </div>
             </div>
           ))}
@@ -64,8 +67,8 @@ const Services = () => {
             <h2>Ready to Start Your Project?</h2>
             <p>Let's discuss how we can bring your ideas to life with our expert development services.</p>
             <div className="cta-buttons">
-              <PrimaryButton>Get a Free Quote</PrimaryButton>
-              <SecondaryButton>Schedule a Consultation</SecondaryButton>
+              <PrimaryButton onClick={() => navigate('/contact')}>Get a Free Quote</PrimaryButton>
+              <SecondaryButton onClick={() => navigate('/contact')}>Schedule a Consultation</SecondaryButton>
             </div>
           </div>
         </div>
