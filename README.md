@@ -1,2 +1,2 @@
-# Landing-page
+# DevTable
 Landing page of DevTable

@@ -1,0 +1,16 @@
+.primaryButton {
+  background: linear-gradient(135deg, #36FE9B, #006280);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(54, 254, 155, 0.4);
+}
