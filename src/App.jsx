@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 
 function App() {
   const navigate = useNavigate()
-  
+
   return (
     <div className="app">
       <header className="navbar">
@@ -45,6 +45,7 @@ function App() {
             <div className="footer-section">
               <h4>Quick Links</h4>
               <ul>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
@@ -53,7 +54,7 @@ function App() {
             <div className="footer-section">
               <h4>Contact</h4>
               <p>devtable276@gmail.com</p>
-              <p>+52 1 33 3393 1845</p>
+              <p>+52 1 33 2708 3945</p>
             </div>
           </div>
           <div className="footer-bottom">
